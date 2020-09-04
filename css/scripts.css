@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Calibri", sans-serif;
+    background-color: #E4FFE1;
+}
+
+nav {
+    width: 100%;
+    top:0;
+    background-color: #474747;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav img {
+    justify-content: left;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 3.125rem;
+}
+
+nav ul li {
+    border-bottom: none;
+    margin: 1rem;
+    flex: 1 0 auto; /* flex-grow: 1; flex-shrink: 0; flex-basis: auto; */
+    text-transform: capitalize;
+    position: relative;
+}
+
+nav ul li a {
+    color: #E6E6E6;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #474747;
+    width: 7rem;
+    opacity: 0.9;
+    height: 9rem;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+#hidden{
+    width:12.4rem;
+}
+
+
+#hidden a:hover {
+    display: block;
+    /* position: relative; */
+}
+
+section, .edu-history {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+#homepageleft {
+    display: block;
+    text-align: right;
+    margin-right: 5rem;
+    width: 48%;
+}
+
+#contform{
+    background-color: greenyellow;
+margin-right: 40px;
+}
+
+#homepageleft h1 {
+    text-align: center;
+    margin: 0rem 0 1rem 9rem;
+}
+
+
+#personalphoto {
+    height: 350px;
+    width: auto;
+}
+#homepageright {
+    justify-items: right;
+    width: 48%;
+}
+
+#aboutpageleft {
+    display: block;
+    text-align: right;
+    margin-right: 2rem;
+    width: 38%;
+}
+
+#aboutpageright {
+    justify-content: right;
+    width: 60%;
+    text-align: justify;
+    margin-right: 10rem;
+}
+
+footer {
+    height: 50px;
+    background-color: #78787f;   
+    display: flex;
+    justify-content: space-evenly; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#footer-scroll {
+    height: 50px;
+    background-color: #78787f;   
+    display: flex;
+    justify-content: space-evenly; 
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#para {
+    width:65%;
+    text-align: justify;
+    margin: 2rem 0;
+    width:65%;
+    text-align: justify;
+}
+
+.container-edu, .container-hobby, .container{
+    position: relative;
+    text-align: center;
+    color: #000;
+    width: 100%;
+    font-size:24px;
+    text-decoration:bold;
+}
+
+.container {     
+    justify-content: center;
+    display: flex;
+}
+
+.hob {
+    text-align: justify;
+    width: 40%;
+    font-size: 1rem;
+}
+
+.container-exp img {
+    height: 580px;
+    width: 1080px;
+    opacity: 0.7;
+    margin-top: 2rem;
+}
+
+
+.container img {
+    height: 570px;
+    width: 100%;
+    opacity: 0.7;
+}
+
+.centered {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    opacity: 0.6;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+.hobcentered{
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    /* bottom: 20px; */
+    right: 20px;
+    background-color: black;
+    color: white;
+    opacity: 0.6;
+    font-size:18px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hobcentered p {
+      text-align: justify;
+  }
+ 
+  /*---- Styling Education page ----*/
+.edu-history {
+    padding: 0;
+    margin-top: 7rem;
+    display: block;
+}
+
+.deakin, .nist, .holmes {
+    display: flex;
+    justify-content: center;
+    color: #000004;
+    margin-bottom: 1rem;
+}
+
+.date-institution {
+    width: 10%;
+    color: #737475;
+    text-align: center;
+    margin: .5rem 1rem;
+    line-height: 1rem;
+    letter-spacing: .02rem;
+    border-right: 1px solid #78787f;
+}
+
+.date-institution::before{
+    content:" ";
+    display:block;
+    float: right;
+    width:5px;
+    height:5px;
+    background-color: #AA1C1C;
+}
+
+.institute-url {
+    text-decoration: none;
+    color: #D03C48;
+    overflow: hidden;
+}
+
+.description-institution{
+    width: 40%;
+}
+
+.description-institution h2{
+    color: #000004;
+    letter-spacing: .07rem;
+    font-weight: 700;
+    padding: .5rem;
+}
+
+.collegepic {
+    width: 25%;
+    overflow: hidden;
+}
+
+.eduimg {
+    width: 100%;
+    height: auto;
+}
+
+.galleryitems {
+    margin: 2rem 0 0 0;
+    padding: 0;
+    display: flex;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-side-contents {
+    margin: 7rem 3rem;
+    width: 20%;
+    display: flex;
+}
+
+.leftimage1 {
+    width: 100%;
+}
+
+.right-side-contents {
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.images {
+    margin: 0;
+    overflow: hidden;
+}
+
+.right-side-image{
+   width: 16%;  
+   max-height: 7rem;
+   margin-top: 1rem;
+   margin-right: 1rem;
+   overflow: hidden;
+   transform: scale(1);
+}
+
+.right-side-image-last{
+   width: 19%;  
+   max-height: 7rem;
+   margin-top: 1rem;
+   margin-right: 0;
+   overflow: hidden;
+}
+
+.rightimage {
+    width: 100%;
+    height: auto;
+}
+
+.rightimage:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease-in;
+}
